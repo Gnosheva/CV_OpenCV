@@ -41,7 +41,6 @@ viewImage(img_blur_11, 'gauss11')
 # Фильтры Собеля и Лапласа
 
 my_photo = cv2.imread('peppa.jpg', cv2.IMREAD_GRAYSCALE)
-# img = cv2.imread('images/sobel.bmp', cv2.IMREAD_GRAYSCALE)
 sobelx = cv2.Sobel(my_photo, -1, 1, 0)
 sobely = cv2.Sobel(my_photo, -1, 0, 1)
 viewImage(sobely, 'sobel')
