@@ -45,6 +45,7 @@ sobelx = cv2.Sobel(my_photo, -1, 1, 0)
 sobely = cv2.Sobel(my_photo, -1, 0, 1)
 viewImage(sobely, 'sobel')
 viewImage(sobelx, 'sobel')
+
 laplacian = cv2.Laplacian(my_photo, cv2.CV_64F)
 laplacian = cv2.convertScaleAbs(laplacian)
 viewImage(laplacian, 'laplacian')
