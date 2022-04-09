@@ -40,11 +40,11 @@ viewImage(img_blur_7, 'gauss7')
 viewImage(img_blur_11, 'gauss11')
 # Фильтры Собеля и Лапласа
 
-my_photo = cv2.imread('peppa.jpg', cv2.IMREAD_GRAYSCALE)
+my_photo = cv2.imread('apple.jpg', cv2.IMREAD_GRAYSCALE)
 sobelx = cv2.Sobel(my_photo, -1, 1, 0)
 sobely = cv2.Sobel(my_photo, -1, 0, 1)
-viewImage(sobely, 'sobel')
-viewImage(sobelx, 'sobel')
+viewImage(sobely, 'sobely')
+viewImage(sobelx, 'sobelx')
 
 laplacian = cv2.Laplacian(my_photo, cv2.CV_64F)
 laplacian = cv2.convertScaleAbs(laplacian)
